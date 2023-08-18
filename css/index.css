@@ -3,6 +3,12 @@
     --secondary-text: #F2F4F3;
     --tertiary-text: #00B120;
     --background: #0C0C0C;
+
+    --bar-width: 40px;
+    --bar-height: 5px;
+    --hamburger-gap: 6px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
 @font-face {
@@ -24,13 +30,90 @@ body {
     color: var(--secondary-text);
 }
 
-nav, .nav-links {
+nav, #navLinks {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-h4 {
+#navLinks a {
     padding: 0 10px;
+    color: var(--secondary-text);
+    text-decoration: none;
+}
+
+#navLinks a:hover {
+    color: var(--tertiary-text);
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .hamburger-menu {
+        --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--hamburger-gap);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: var(--secondary-text);
+        border-radius: 9999px;
+        transform-origin: left center;
+        transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing);
+    }
+
+    .hamburger-menu input {
+        appearance: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .hamburger-menu:has(input:checked)::before {
+        rotate: 45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / -2);
+    }
+
+    .hamburger-menu:has(input:checked)::after {
+        rotate: -45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / 2);
+    }
+
+    .hamburger-menu input:checked {
+        opacity: 0;
+        width: 0;
+    }
+
+    #navLinks {
+        transition: var(--animation-timing);
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        right: 50%;
+        justify-content: space-evenly;
+        opacity: 0;
+        visibility: hidden;
+    }
 }
