@@ -1,12 +1,36 @@
+:root {
+    --primary-text: #7E7E7E;
+    --secondary-text: #F2F4F3;
+    --tertiary-text: #00B120;
+    --background: #0C0C0C;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('./assets/font/bebasneue-regular.woff2') format('woff2'),
+    url('./assets/font/bebasneue-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #000C24;
+    background-color: var(--background);
+    font-family: 'BebasNeue', sans-serif;
+    color: var(--secondary-text);
 }
 
-h1 {
-    color: #F2F4F3;
+nav, .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+h4 {
+    padding: 0 10px;
 }
