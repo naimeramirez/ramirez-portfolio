@@ -1,12 +1,31 @@
-const hamburgerCheckbox = document.getElementById("hamburgerCheckbox");
-const navLinks = document.getElementById("navLinks");
+"use strict";
+(function () {
 
-hamburgerCheckbox.addEventListener("change", () => {
-    if (hamburgerCheckbox.checked) {
-        navLinks.style.visibility = "visible";
-        navLinks.style.opacity = "1";
-    } else {
-        navLinks.style.visibility = "hidden";
-        navLinks.style.opacity = "0";
+    const hamburgerCheckbox = document.getElementById("hamburgerCheckbox");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburgerCheckbox.addEventListener("change", () => {
+        if (hamburgerCheckbox.checked) {
+            navLinks.classList.remove("hidden");
+        } else {
+            navLinks.classList.add("hidden");
+        }
+    });
+
+    let viewportWidth;
+
+    function uncheckCheckbox() {
+        if (hamburgerCheckbox.checked) {
+            hamburgerCheckbox.checked = false;
+            navLinks.classList.add("hidden");
+        }
     }
-});
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth !== viewportWidth) {
+            uncheckCheckbox();
+            viewportWidth = window.innerWidth;
+        }
+    });
+
+})();

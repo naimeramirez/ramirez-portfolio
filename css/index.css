@@ -30,20 +30,20 @@ body {
     color: var(--secondary-text);
 }
 
-nav, #navLinks {
+nav, .nav-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-#navLinks a {
+.nav-links a {
     padding: 0 10px;
     color: var(--secondary-text);
     text-decoration: none;
 }
 
-#navLinks a:hover {
+.nav-links a:hover {
     color: var(--tertiary-text);
 }
 
@@ -106,13 +106,16 @@ nav, #navLinks {
         width: 0;
     }
 
-    #navLinks {
+    .nav-links {
         transition: var(--animation-timing);
         position: absolute;
         top: 50px;
         left: 50%;
         right: 50%;
         justify-content: space-evenly;
+    }
+
+    .hidden {
         opacity: 0;
         visibility: hidden;
     }
