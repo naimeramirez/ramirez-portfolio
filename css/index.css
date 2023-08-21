@@ -30,11 +30,19 @@ body {
     color: var(--secondary-text);
 }
 
-nav, .nav-links {
+nav {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links a {
@@ -55,8 +63,8 @@ nav, .nav-links {
     .hamburger {
         display: block;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 20px;
+        right: 20px;
     }
 
     .hamburger-menu {
@@ -120,3 +128,61 @@ nav, .nav-links {
         visibility: hidden;
     }
 }
+
+/*hero section*/
+.landing {
+    height: 100vh;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.hero-links {
+    display: flex;
+}
+
+.social-icon {
+    width: 30px;
+    fill: var(--secondary-text);
+    padding: 5px;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary-text);
+    width: 120px;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+.download-icon {
+    width: 25px;
+    fill: var(--secondary-text);
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.arrow {
+    width: 50px;
+    fill: var(--primary-text);
+}
+
+/*h1 {*/
+/*    font-family: 'BebasNeue', sans-serif;*/
+/*}*/
