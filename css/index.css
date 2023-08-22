@@ -37,8 +37,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: rgba(12, 12, 12, 50%);
+    padding: 5px 30px;
+    background-color: rgba(12, 12, 12, 75%);
 }
 
 nav h1 {
@@ -236,7 +236,7 @@ nav h1 {
 @media (min-width: 781px) {
     .landing {
         height: 100vh;
-        margin: -96.5px auto 0;
+        margin: -56.5px auto 0;
     }
 
     .hero-section {
@@ -288,7 +288,7 @@ nav h1 {
 
 .view-more {
     text-align: center;
-    margin: 10px auto;
+    margin: 10px auto 50px;
 }
 
 .view-more a {
