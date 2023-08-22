@@ -297,6 +297,10 @@ nav h1 {
     text-decoration: none;
 }
 
+.view-more a:hover {
+    color: var(--complimentary);
+}
+
 .skills-icons {
     list-style-type: none;
     display: flex;
@@ -319,3 +323,46 @@ nav h1 {
     color: var(--secondary);
 }
 
+/*projects*/
+.projects {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    place-items: center;
+    place-content: center;
+    margin-bottom: 50px;
+}
+
+.project-img {
+    background-color: var(--primary);
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.project-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 50px;
+}
+
+.project-title {
+    color: var(--secondary);
+    font-size: 30px;
+}
+
+.project-p {
+    color: var(--primary);
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.project-skills {
+    color: var(--secondary);
+}
