@@ -38,7 +38,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(12, 12, 12, 20%);
+    background-color: rgba(12, 12, 12, 50%);
 }
 
 nav h1 {
@@ -128,8 +128,9 @@ nav h1 {
 
     .nav-links {
         transition: var(--animation-timing);
+        background-color: rgba(12, 12, 12, 50%);
         position: absolute;
-        top: 50px;
+        top: 60px;
         left: 50%;
         right: 50%;
         justify-content: space-evenly;
@@ -259,5 +260,62 @@ nav h1 {
         display: none;
     }
 
+}
+
+/*about*/
+.about {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.section-title {
+    color: var(--secondary);
+    font-size: 60px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.section-subtitle {
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+.about-p {
+    color: var(--primary);
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.view-more {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.view-more a {
+    color: var(--tertiary);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.skills-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills-icon {
+    fill: var(--tertiary);
+    height: 50px;
+    margin: 20px auto;
+}
+
+.skills-p {
+    color: var(--primary);
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.exposure {
+    color: var(--secondary);
 }
 
