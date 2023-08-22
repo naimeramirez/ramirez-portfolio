@@ -2,7 +2,7 @@
     --primary: #7E7E7E;
     --secondary: #F2F4F3;
     --tertiary: #00B120;
-    --complimentary: #AB0522;
+    --complimentary: #1F8F2D;
     --background: #0C0C0C;
 
     --bar-width: 40px;
@@ -389,6 +389,7 @@ label {
     padding: 5px;
     font-size: 20px;
     color: var(--secondary);
+    margin-top: 5px;
 }
 
 input, textarea {
@@ -421,4 +422,27 @@ button {
 
 button:hover {
     background-color: var(--complimentary);
+}
+
+/*footer*/
+footer {
+background-color:  var(--primary);
+    width: 100vw;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    height: 30px;
+    fill: var(--secondary);
+    margin: 15px;
+}
+
+.footer-link:hover {
+    fill: var(--tertiary);
 }
