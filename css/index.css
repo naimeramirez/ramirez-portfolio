@@ -38,6 +38,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: rgba(12, 12, 12, 20%);
 }
 
 nav h1 {
@@ -67,10 +68,14 @@ nav h1 {
 }
 
 @media (max-width: 450px) {
+    nav {
+        padding: 10px;
+    }
+
     .hamburger {
         display: block;
         position: absolute;
-        top: 20px;
+        top: 18px;
         right: 20px;
     }
 
@@ -138,20 +143,12 @@ nav h1 {
 
 /*hero section*/
 .landing {
-    height: 100vh;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: -96.5px auto 0;
-}
-
-.hero-section {
-    max-width: 1280px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    align-items: center;
+    padding: 0 50px;
 }
 
 .hero-section ul {
@@ -224,6 +221,8 @@ nav h1 {
 
 .avatar {
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 .arrow {
@@ -231,5 +230,34 @@ nav h1 {
     bottom: 0;
     width: 50px;
     fill: var(--primary);
+}
+
+@media (min-width: 781px) {
+    .landing {
+        height: 100vh;
+        margin: -96.5px auto 0;
+    }
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 780px) {
+    .landing {
+        margin: 0 auto;
+    }
+
+    .avatar {
+        margin: 35px auto;
+    }
+
+    .arrow {
+        display: none;
+    }
+
 }
 
