@@ -342,7 +342,7 @@ nav h1 {
     background-color: var(--primary);
     max-width: 350px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .project-links {
@@ -365,4 +365,60 @@ nav h1 {
 
 .project-skills {
     color: var(--secondary);
+}
+
+/*contact*/
+.contact {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 700px;
+    padding: 30px;
+    margin: 20px auto;
+    background-color:  var(--primary);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 10px;
+}
+
+label {
+    padding: 5px;
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+input, textarea {
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+input {
+    height: 40px;
+    padding-left: 5px;
+}
+
+textarea {
+    height: 100px;
+    padding: 5px;
+}
+
+button {
+    background-color: var(--tertiary);
+    border: none;
+    border-radius: 50px;
+    height: 35px;
+    font-family: 'BebasNeue', sans-serif;
+    font-size: 20px;
+    color: var(--secondary);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--complimentary);
 }
