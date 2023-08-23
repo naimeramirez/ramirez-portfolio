@@ -8,16 +8,18 @@
 </head>
 <body>
 <nav>
-    <h1>{DARIAN}</h1>
+    <div>
+        <a class="logo" href="#">{DARIAN}</a>
+    </div>
     <div class="hamburger">
         <label class="hamburger-menu">
             <input type="checkbox" id="hamburgerCheckbox">
         </label>
     </div>
     <ul class="nav-links hidden" id="navLinks">
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">PROJECTS</a></li>
-        <li><a href="">CONTACT</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTAC</a></li>
     </ul>
 </nav>
 
@@ -52,7 +54,7 @@
     </svg>
 </div>
 
-<div class="about">
+<div class="about" id="about">
     <p class="section-title">ABOUT</p>
     <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur dolores error est
         laborum molestiae numquam officia pariatur praesentium provident rerum, sapiente voluptates? Aperiam consequatur
@@ -101,7 +103,7 @@
         Communication Skills - Culture - Fast Paced </p>
 </div>
 
-<div class="projects">
+<div class="projects" id="projects">
     <p class="section-title">PROJECTS</p>
 
     <div class="project">
@@ -173,7 +175,7 @@
 
 </div>
 
-<div class="contact">
+<div class="contact" id="contact">
     <p class="section-title">CONTACT</p>
     <p class="skills-p">WANT TO GET IN TOUCH? I WOULD LOVE TO HEAR FROM YOU!</p>
 

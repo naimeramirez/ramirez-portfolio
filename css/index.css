@@ -25,6 +25,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background);
     font-family: 'BebasNeue', sans-serif;
@@ -41,8 +45,14 @@ nav {
     background-color: rgba(12, 12, 12, 75%);
 }
 
-nav h1 {
+.logo{
+    color: var(--secondary);
     font-size: 41px;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: var(--tertiary);
 }
 
 .nav-links {
@@ -262,12 +272,13 @@ nav h1 {
 
 }
 
-/*about*/
-.about {
+.about, .projects, .contact {
     max-width: 900px;
     margin: 50px auto;
+    scroll-margin-top: 57px;
 }
 
+/*about*/
 .section-title {
     color: var(--secondary);
     font-size: 60px;
@@ -324,11 +335,6 @@ nav h1 {
 }
 
 /*projects*/
-.projects {
-    max-width: 900px;
-    margin: 50px auto;
-}
-
 .project {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -369,8 +375,6 @@ nav h1 {
 
 /*contact*/
 .contact {
-    max-width: 900px;
-    margin: 50px auto;
     text-align: center;
 }
 
