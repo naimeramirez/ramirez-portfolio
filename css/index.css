@@ -40,11 +40,15 @@ body {
 nav {
     position: sticky;
     top: 0;
+    padding: 5px 30px;
+    background-color: rgba(12, 12, 12, 75%);
+}
+
+.nav-content {
+    max-width: 1300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 30px;
-    background-color: rgba(12, 12, 12, 75%);
 }
 
 .logo {
