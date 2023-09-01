@@ -28,4 +28,8 @@
         }
     });
 
+    window.addEventListener("scroll", () => {
+        uncheckCheckbox()
+    });
+
 })();
