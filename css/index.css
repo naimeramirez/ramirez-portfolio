@@ -346,7 +346,7 @@ nav {
 }
 
 /*projects*/
-@media (max-width: 780px) {
+@media (max-width: 350px) {
     .project {
         display: flex;
         flex-direction: column;
@@ -361,6 +361,24 @@ nav {
 
     .project-img {
         width: 300px;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 780px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 50px;
+    }
+
+    .img-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-img {
+        width: 320px;
     }
 }
 
