@@ -358,6 +358,10 @@ nav {
         flex-direction: column;
         justify-content: center;
     }
+
+    .project-img {
+        width: 320px;
+    }
 }
 
 @media (min-width: 781px) {
@@ -367,11 +371,14 @@ nav {
         grid-gap: 20px;
         margin-bottom: 50px;
     }
+
+    .project-img {
+        width: 350px;
+    }
 }
 
 .project-img {
     background-color: var(--primary);
-    max-width: 350px;
     height: auto;
     border-radius: 10px;
     margin: 0 auto;
