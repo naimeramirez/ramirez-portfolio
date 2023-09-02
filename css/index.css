@@ -349,32 +349,34 @@ nav {
 @media (max-width: 350px) {
     .project {
         display: flex;
-        flex-direction: column;
-        margin: 0 auto 50px;
+        flex-direction: column-reverse;
+        margin: 0 auto;
     }
 
     .img-div {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 10px auto;
     }
 
     .project-img {
-        width: 300px;
+        width: 260px;
     }
 }
 
 @media (min-width: 351px) and (max-width: 780px) {
     .project {
         display: flex;
-        flex-direction: column;
-        margin: 0 auto 50px;
+        flex-direction: column-reverse;
+        margin: 0 auto;
     }
 
     .img-div {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 10px auto;
     }
 
     .project-img {
@@ -393,11 +395,11 @@ nav {
     .project-img {
         width: 350px;
     }
+
 }
 
 .project-img {
     background-color: var(--primary);
-    height: auto;
     border-radius: 10px;
     margin: 0 auto;
 }
@@ -406,7 +408,8 @@ nav {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 50px;
+    align-items: start;
+    height: 50px;
 }
 
 .project-title {
@@ -440,14 +443,14 @@ nav {
     border-radius: 10px;
 }
 
-label {
+.form-label {
     padding: 5px;
     font-size: 20px;
     color: var(--secondary);
     margin-top: 5px;
 }
 
-input, textarea {
+.form-control {
     border: none;
     border-radius: 5px;
     font-size: 20px;
@@ -477,6 +480,23 @@ button {
 
 button:hover {
     background-color: var(--complimentary);
+}
+
+.submit-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-message p {
+    height: 435px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.missing-info {
+    /*background-color: rgba(219, 17, 2, 10%);*/
+    border: solid red 2px;
 }
 
 /*footer*/
